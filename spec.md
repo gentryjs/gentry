@@ -47,8 +47,8 @@ build:
     coffee.coffee
     js.coffee
   /backend
-    yes.coffee
-    no.coffee
+    true.coffee
+    false.coffee
   /persistence
     REST.coffee
     firebase.coffee

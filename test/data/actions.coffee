@@ -5,6 +5,7 @@ module.exports =
     js: (done) ->
       
       #gentry.cloneRepo 'https://github.com/fissionjs/generator/js', '/'
+      
 
       setTimeout ->
         console.log 'js'      

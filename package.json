@@ -1,7 +1,7 @@
 {
    "name": "gentry",
-   "description": "scaffolding",
-   "version":"0.0.1",
+   "description": "make generators",
+   "version":"0.0.2",
    "homepage":"http://github.com/wearefractal/gentry",
    "repository":"git://github.com/wearefractal/gentry.git",
    "author":"Fractal <contact@wearefractal.com> (http://wearefractal.com/)",

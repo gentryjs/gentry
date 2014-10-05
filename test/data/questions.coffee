@@ -3,19 +3,23 @@ module.exports =
   language:
     prompt: 'Coffee or JS?'
     input:
-      type: 'enum'
-      options: ['coffee', 'js']
+      type: String
+      enum: ['coffee', 'js']
+
+      #enum:
+      #  coffee: 
+      #    img: 'coffeesript.png'
 
   backend:
-    prompt: 'server or no server?'
+    prompt: 'node server?'
     input:
       type: Boolean
 
   persistence:
     prompt: 'persistence?'
     input:
-      type: 'enum'
-      options: ->
+      type: String
+      enum: ->
         if @backend
           ['REST', 'firebase', 'localstorage']
         else
@@ -24,11 +28,11 @@ module.exports =
   auth:
     prompt: 'type of auth?'
     input:
-      type: 'enum'
-      options: ['none', 'facebook', 'twitter', 'email']
+      type: String
+      enum: ['none', 'facebook', 'twitter', 'email']
 
   build:
     prompt: 'build system?'
     input: 
-      type: 'enum'
-      options: ['gulp', 'grunt']
+      type: String
+      enum: ['gulp', 'grunt']
