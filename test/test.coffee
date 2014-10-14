@@ -4,7 +4,7 @@ gentry = require '../lib'
 
 answers = 
   language: 'js'
-  backend: 'foo'
+  backend: 'yes'
   persistence: 'localstorage'
   auth: 'none'
   build: 'gulp'
@@ -15,7 +15,5 @@ should = require 'should'
 describe 'gentry', ->
   describe 'scaffold', ->
     it 'should scaffold out project', (done) ->
-
-      gentry.scaffold questions, actions, answers, ->
+      gentry.runActions questions, actions, answers, ->
         done()
-

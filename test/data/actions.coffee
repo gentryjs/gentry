@@ -3,23 +3,23 @@ module.exports =
   language:
     coffee: ->
     js: (done) ->
-      
-      #gentry.cloneRepo 'https://github.com/fissionjs/generator/js', '/'
-      
-
       setTimeout ->
-        console.log 'js'      
+        #console.log 'js'   
         done()
       , 1000
 
-  backend: (val) ->
+  backend: 
+    yes: (done) ->
+      done()
 
-    console.log "backend: #{val}"
+  persistence:
+    localstorage: (done) ->
+      done()
+
+  auth: 
+    none: (done) -> done()
 
   build:
     gulp: (done) -> 
-      console.log 'gulp'
-
-
+      #console.log 'gulp'
       done()
-    grunt: -> console.log 'grunt'

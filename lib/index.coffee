@@ -1,8 +1,13 @@
 async = require 'async'
-doppel = require 'doppel'
+#doppel = require 'doppel'
 
 module.exports = 
 
+  # TODO: clone
+  #clone: ->
+
+  # TODO: autoscaffold
+  ###
   autoScaffold: ({questions, actions, answers, templateDir, done}) ->
 
     async.eachSeries Object.keys(answers), (key, next) ->
@@ -20,7 +25,7 @@ module.exports =
         done: ->
           console.log 'done'
           done()
-      
+  ###      
 
   runActions: (questions, actions, answers, done) ->
 
