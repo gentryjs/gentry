@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "coffee-script": "*"
+  },
+
+  "scripts": {
+    "test": "NODE_ENV=testing mocha --recursive --reporter spec --compilers coffee:coffee-script/register ./server/test"
+  }
+}

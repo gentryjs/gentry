@@ -1,0 +1,13 @@
+{
+ "database": "mongodb://localhost:27017/fission-server-dev",
+ "twitter": {
+   "consumerKey": "test",
+   "consumerSecret": "test",
+   "callback":"/auth/twitter/callback"
+ },
+ "facebook": {
+   "clientID": "test",
+   "clientSecret": "test",
+   "callback": "/auth/facebook/callback"
+ }
+}

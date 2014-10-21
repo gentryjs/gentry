@@ -1,0 +1,25 @@
+{
+  "name": "<%= package.name %>",
+  "description": "<%= package.description %>",
+  "version": "0.0.1",
+  "homepage": "http://github.com/<%= package.org %>/<%= package.name %>",
+  "repository": "git://github.com/<%= package.org %>/<%= package.name %>.git",
+  "author": "<%= package.author %>",
+  "main": "./index.js",
+  "dependencies": {
+    "async": "*"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/<%= package.org %>/<%= package.name %>/raw/master/LICENSE"
+    }
+  ]
+}

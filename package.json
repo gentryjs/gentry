@@ -1,30 +1,31 @@
 {
-   "name": "gentry",
-   "description": "make generators",
-   "version":"0.0.2",
-   "homepage":"http://github.com/wearefractal/gentry",
-   "repository":"git://github.com/wearefractal/gentry.git",
-   "author":"Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
-   "main":"./index.js",
-
-   "dependencies":{
-      "coffee-script":"*",
-      "async":"*"
-   },
-   "devDependencies":{
-      "mocha":"*",
-      "should":"*"
-   },
-   "scripts":{
-      "test":"mocha --compilers coffee:coffee-script/register"
-   },
-   "engines":{
-      "node":">= 0.4.0"
-   },
-   "licenses":[
-      {
-         "type":"MIT",
-         "url":"http://github.com/wearefractal/gentry/raw/master/LICENSE"
-      }
-   ]
+  "name": "gentry",
+  "description": "make generators",
+  "version": "0.0.3",
+  "homepage": "http://github.com/wearefractal/gentry",
+  "repository": "git://github.com/wearefractal/gentry.git",
+  "author": "Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
+  "main": "./index.js",
+  "dependencies": {
+    "async": "*",
+    "boba": "0.0.3",
+    "coffee-script": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "rimraf": "^2.2.8",
+    "should": "*"
+  },
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/wearefractal/gentry/raw/master/LICENSE"
+    }
+  ]
 }

@@ -1,31 +1,26 @@
 async = require 'async'
-#doppel = require 'doppel'
+boba  = require 'boba'
 
 module.exports = 
 
   # TODO: clone
   #clone: ->
 
-  # TODO: autoscaffold
-  ###
-  autoScaffold: ({questions, actions, answers, templateDir, done}) ->
+  autoScaffold: ({answers, templateDir, dest}, done) ->
 
-    async.eachSeries Object.keys(answers), (key, next) ->
+    throw new Error 'no answers provided' if !answers?
+    throw new Error 'no template root provided' if !templateDir?
 
-      question = questions[key]
-      answer = answers[key]
+    console.log "scaffolding..."
+    #dest ?= process.cwd()
 
-      doppel.doppel
-        templateDir: templateDir
-        to: '/Users/funkytek/apps/tmp/GENTRY'
-        key: key
-        answer: answer
-        sandbox:
-          answers: answers
-        done: ->
-          console.log 'done'
-          done()
-  ###      
+    boba templateDir, dest, null,
+      blacklist: ['.DS_Store']
+      sandbox: answers
+      key: answers.answers
+      , (err, res) ->
+        console.log "complete"
+        done()
 
   runActions: (questions, actions, answers, done) ->
 
