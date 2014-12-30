@@ -1,7 +1,7 @@
 async = require 'async'
 boba  = require 'boba'
 
-module.exports = 
+module.exports =
 
   # TODO: clone
   #clone: ->
@@ -29,7 +29,7 @@ module.exports =
       question = questions[key]
 
       isString = -> question.input.type is String
-      isEnum   = -> (question.input.type is String) and question.input.enum?      
+      isEnum   = -> (question.input.type is String) and question.input.enum?
 
       isKeyAction    = -> actions[key]?
       isAnswerAction = -> actions[key]?[answers[key]]?
@@ -38,11 +38,11 @@ module.exports =
       passVal        = -> actions[key]? answers[key], next
 
       next() unless isKeyAction() or isAnswerAction()
-     
+
       if isEnum() then callAnswerKey()
       else if isString() then passVal()
       else callAnswerKey()
-    
+
     , done
 
 

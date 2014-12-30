@@ -10,7 +10,7 @@ backend:
   prompt: 'server or no server?'
   input:
     type: Boolean
-    
+
 persistence:
   prompt: 'persistence'
   input:
@@ -29,7 +29,7 @@ auth:
 
 build:
   prompt: 'build system'
-  input: 
+  input:
     type: enum
     options: ['gulp', 'grunt']
 

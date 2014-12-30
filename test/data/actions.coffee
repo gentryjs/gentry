@@ -1,14 +1,14 @@
-module.exports = 
+module.exports =
 
   language:
     coffee: ->
     js: (done) ->
       setTimeout ->
-        #console.log 'js'   
+        #console.log 'js'
         done()
       , 1000
 
-  backend: 
+  backend:
     yes: (done) ->
       done()
 
@@ -16,10 +16,10 @@ module.exports =
     localstorage: (done) ->
       done()
 
-  auth: 
+  auth:
     none: (done) -> done()
 
   build:
-    gulp: (done) -> 
+    gulp: (done) ->
       #console.log 'gulp'
       done()

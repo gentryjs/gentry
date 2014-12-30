@@ -5,7 +5,7 @@ should = require 'should'
 path = require 'path'
 rimraf = require 'rimraf'
 
-answers = 
+answers =
   language: 'coffee'
   server: 'yes'
   persistence: 'localstorage'
@@ -20,7 +20,7 @@ pkg =
 describe 'gentry', ->
 
   after (done) ->
-    rimraf path.resolve('./test/autoScaffold'), (err) -> 
+    rimraf path.resolve('./test/autoScaffold'), (err) ->
       console.log err if err?
       done()
 

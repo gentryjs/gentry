@@ -1,5 +1,5 @@
 module.exports =
-  
+
   language:
     prompt: 'Coffee or JS?'
     input:
@@ -7,7 +7,7 @@ module.exports =
       enum: ['coffee', 'js']
 
       #enum:
-      #  coffee: 
+      #  coffee:
       #    img: 'coffeesript.png'
 
   backend:
@@ -33,6 +33,6 @@ module.exports =
 
   build:
     prompt: 'build system?'
-    input: 
+    input:
       type: String
       enum: ['gulp', 'grunt']
