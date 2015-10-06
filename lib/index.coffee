@@ -19,6 +19,7 @@ module.exports =
       sandbox: answers
       key: answers.answers
       , (err, res) ->
+        return done err if err?
         console.log "complete"
         done()
 
