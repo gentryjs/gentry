@@ -1,10 +1,8 @@
-
 language:
   prompt: 'Coffee or JS'
   input:
-    type: enum
+    type: String
     options: ['coffee', 'js']
-
 
 backend:
   prompt: 'server or no server?'
@@ -14,7 +12,7 @@ backend:
 persistence:
   prompt: 'persistence'
   input:
-    type: enum
+    type: String
     options: ->
       if @backend
         ['REST', firebase', 'localstorage']
@@ -24,16 +22,14 @@ persistence:
 auth:
   prompt: 'type of auth'
   input:
-    type: enum
-    options: ['none', 'facebook', 'twitter', 'email']
+    type: [String]
+    options: ['facebook', 'twitter', 'email']
 
 build:
   prompt: 'build system'
   input:
-    type: enum
+    type: String
     options: ['gulp', 'grunt']
-
-
 
 /templates
  /language
