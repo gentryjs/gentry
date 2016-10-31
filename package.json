@@ -20,7 +20,7 @@
     "test": "mocha --compilers coffee:coffee-script/register"
   },
   "engines": {
-    "node": ">= 0.4.0"
+    "node": ">= 4"
   },
   "licenses": [
     {
