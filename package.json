@@ -9,7 +9,7 @@
   "dependencies": {
     "async": "1.4.2",
     "boba": "gentryjs/boba",
-    "coffee-script": "1.10.0"
+    "coffee-script": "1.12.4"
   },
   "devDependencies": {
     "mocha": "2.3.3",
